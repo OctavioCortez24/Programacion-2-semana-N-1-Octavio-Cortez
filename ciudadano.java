@@ -1,3 +1,8 @@
+package programacion2;
+
+
+import programacion2.persona;
+
 
 public class ciudadano extends persona {
 

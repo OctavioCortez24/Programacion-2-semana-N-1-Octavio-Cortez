@@ -1,3 +1,5 @@
+package programacion2;
+
 
 public class persona {
 
