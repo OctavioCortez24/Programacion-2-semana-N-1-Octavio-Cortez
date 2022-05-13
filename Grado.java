@@ -28,6 +28,11 @@ public class Grado extends Escuela {
         return "Nombre: "+nom+
                 "\nCantidad de alumnos: "+cantAlum;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+       return obj.equals(toString());
+    }
     
     
 }

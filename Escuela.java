@@ -30,4 +30,11 @@ public class Escuela {
         return "Nombre: " + nombre
                 + "\nNivel: " + nivel;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        return obj.equals(toString());
+        
+    }
+
 }
