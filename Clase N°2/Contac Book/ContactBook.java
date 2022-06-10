@@ -4,20 +4,23 @@ import java.util.*;
 
 public class ContactBook extends Contact {
 
-    private String name;
+    private String nameCB;
     ArrayList<Contact> contacBook=new ArrayList();
-    public ContactBook() {
-        super(null, null, null, false);
-    }
-    
 
+    public ContactBook(){
+
+    }
+    public ContactBook(String name) {
+
+        this.nameCB = name;
+    }
 
     public String getName() {
-        return name;
+        return nameCB;
     }
 
     public void setName(String n) {
-        this.name = name;
+        this.nameCB = nameCB;
     }
 
     public void addContact(Contact c) {
@@ -41,11 +44,7 @@ public class ContactBook extends Contact {
 
     @Override
     public String toString() {
-        String names="";
-        for(int i=0;i< contacBook.size();i++){
-            names=names+" "+contacBook.get(i).toString('#');
-        }
-        return names;
+        return nameCB;
     }
 
     public String toString(char barita) {

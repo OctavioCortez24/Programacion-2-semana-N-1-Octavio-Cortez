@@ -3,7 +3,18 @@ package ClaseN2SemanaN3;
 import java.util.Scanner;
 
 public class view {
-    public static void menu(ContactBook contactBookObj){
+
+    public static void menu(){
+
+    }
+    public static ContactBook createAContactBook(){
+        Scanner Leer=new Scanner(System.in);
+        System.out.println("Enter the name of contactBook");
+        String nameContactBook=Leer.nextLine();
+        ContactBook libreta=new ContactBook(nameContactBook);
+        return libreta;
+    }
+    public static void menu2(ContactBook contactBookObj){
         Scanner LeerNumer = new Scanner(System.in);
 
 

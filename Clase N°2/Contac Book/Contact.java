@@ -6,8 +6,9 @@ public class Contact {
     private String movil;
     private boolean topList;
 
+    public Contact(){
 
-
+    }
     public Contact(String name, String email, String movil, boolean topList) {
         this.name = name;
         this.email = email;
