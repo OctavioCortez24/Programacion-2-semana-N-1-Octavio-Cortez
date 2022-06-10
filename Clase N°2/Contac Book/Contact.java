@@ -40,7 +40,7 @@ public class Contact {
         this.movil = movil;
     }
 
-    public boolean isTopList() {
+    public boolean getIsTopList() {
         return topList;
     }
 
@@ -49,9 +49,13 @@ public class Contact {
     }
     
 
-    @Override
-    public boolean equals(Object o) {
-        return super.equals(o);
+
+    public boolean equals(Contact o) {
+        boolean igual=false;
+        if (o.getName()==this.name&&o.getEmail()==this.email&&o.getMovil()==this.movil&&o.getIsTopList()==this.topList){
+            igual=true;
+        }
+        return igual;
     }
 
     @Override
@@ -59,6 +63,8 @@ public class Contact {
     public String toString() {
         return name+"#"+email+"#"+movil+"#"+topList;
     }
+
+
 
     
     
