@@ -37,7 +37,7 @@ public class Controller {
                 contactBookObj.delContact(contacto);
             }else if(decision==3){
 
-                System.out.println(contactBookObj);
+                System.out.println(contactBookObj.toString('|'));
             }else if(decision==4){
                 System.out.println(contactBookObj.isTheContact(contacto));
             }

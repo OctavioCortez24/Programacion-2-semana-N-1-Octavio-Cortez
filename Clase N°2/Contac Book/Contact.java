@@ -48,10 +48,8 @@ public class Contact {
         this.topList = topList;
     }
 
-    @Override
-    public String toString(char ceparar) {
-        return name+ceparar+email+ceparar+movil+ceparar+topList;
-    }
+
+
     @Override
     public boolean equals(Object o) {
 
@@ -67,7 +65,10 @@ public class Contact {
     @Override
 
     public String toString() {
-        return name+"#"+email+"#"+movil+"#"+topList;
+        return name+" "+email+" "+movil+" "+topList;
+    }
+    public String toString(char ceparar) {
+        return this.name+ceparar+this.email+ceparar+this.movil+ceparar+this.topList;
     }
 
 

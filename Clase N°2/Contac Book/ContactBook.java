@@ -43,7 +43,15 @@ public class ContactBook extends Contact {
     public String toString() {
         String names="";
         for(int i=0;i< contacBook.size();i++){
-            names=names+"|"+contacBook.get(i);
+            names=names+" "+contacBook.get(i).toString('#');
+        }
+        return names;
+    }
+
+    public String toString(char barita) {
+        String names="";
+        for(int i=0;i< contacBook.size();i++){
+            names=names+barita+contacBook.get(i).toString('#');
         }
         return names;
     }

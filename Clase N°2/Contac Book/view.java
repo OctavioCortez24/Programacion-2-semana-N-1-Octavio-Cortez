@@ -29,7 +29,7 @@ public class view {
     }
     public static Contact deleteContact(ContactBook cB) {
         boolean topListDelCont;
-        System.out.println(cB);
+        System.out.println(cB.toString('|'));
         Scanner LeerNumer=new Scanner(System.in);
         Scanner Leer=new Scanner(System.in);
             System.out.println("Select the contact you want to delete:");
@@ -49,6 +49,7 @@ public class view {
                 topListDelCont=false;
             }
            Contact c=new Contact(nameCont,emailCont,numerCont,topListDelCont);
+
 
         return c;
 
