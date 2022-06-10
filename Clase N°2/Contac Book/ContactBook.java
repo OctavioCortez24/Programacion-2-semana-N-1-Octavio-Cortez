@@ -28,6 +28,7 @@ public class ContactBook extends Contact {
     public void delContact(Contact c) {
         for(int i=0;i<contacBook.size();i++){
             if (contacBook.get(i).equals(c)==true){
+
                 contacBook.remove(i);
             }
         }
@@ -35,19 +36,7 @@ public class ContactBook extends Contact {
     }
 
     public boolean isTheContact(Contact c) {
-        int cont=0;
-        for(int i=0;i< contacBook.size();i++){
-            if(contacBook.get(i).equals(c)){
-                cont++;
-            }
-        }
-        if (cont!=0){
-            return true;
-        }else{
-            return false;
-        }
-
-
+        return false;
     }
 
     @Override

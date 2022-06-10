@@ -47,15 +47,21 @@ public class Contact {
     public void setTopList(boolean topList) {
         this.topList = topList;
     }
-    
 
+    @Override
+    public String toString(char ceparar) {
+        return name+ceparar+email+ceparar+movil+ceparar+topList;
+    }
+    @Override
+    public boolean equals(Object o) {
 
-    public boolean equals(Contact o) {
-        boolean igual=false;
-        if (o.getName()==this.name&&o.getEmail()==this.email&&o.getMovil()==this.movil&&o.getIsTopList()==this.topList){
-            igual=true;
+        if (toString().equals(o.toString())){
+
+            return true;
+        }else{
+            return false;
         }
-        return igual;
+
     }
 
     @Override
@@ -63,6 +69,8 @@ public class Contact {
     public String toString() {
         return name+"#"+email+"#"+movil+"#"+topList;
     }
+
+
 
 
 

@@ -39,7 +39,7 @@ public class view {
             String emailCont=Leer.nextLine();
             System.out.print("Enter the phone number of contact:");
             String numerCont=Leer.nextLine();
-            System.out.print("Enter the topList of contact:");
+            System.out.println("Enter the topList of contact:");
             System.out.println("[1]-->True");
             System.out.println("[2]-->False");
             int decicion=LeerNumer.nextInt();
