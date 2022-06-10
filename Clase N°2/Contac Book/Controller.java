@@ -21,8 +21,8 @@ public class Controller {
 
             decision = LeerNumer.nextInt();
             if (decision == 1) {
-
-                contactBookObj.addContact(contacto);
+                Contact contact=view.createContact();
+                contactBookObj.addContact(contact);
 
             } else if (decision == 2) {
                 contactBookObj.delContact(contacto);

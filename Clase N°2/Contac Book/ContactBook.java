@@ -21,16 +21,7 @@ public class ContactBook extends Contact {
     }
 
     public void addContact(Contact c) {
-        Scanner Leer = new Scanner(System.in);
-        System.out.println("Enter your name:");
-        String nameCont = Leer.nextLine();
-        System.out.println("Enter your Email:");
-        String emailCont = Leer.nextLine();
-        System.out.println("Enter your movile:");
-        String movilCont = Leer.nextLine();
-        c.setName(nameCont);
-        c.setEmail(emailCont);
-        c.setMovil(movilCont);
+
         contacBook.add(c);
 
 
@@ -81,16 +72,6 @@ public class ContactBook extends Contact {
         String names="";
         for(int i=0;i< contacBook.size();i++){
             names=names+"|"+contacBook.get(i);
-        }
-        StringBuffer contacBookOrde= new StringBuffer(name);
-
-        for(int i=0;i<names.length();i++){
-            if(names.charAt(i)=='n'&&names.charAt(i+1)=='u'&&names.charAt(i+2)=='l'&&names.charAt(i+3)=='l'){
-                for (int k=0;k<5;k++){
-                    contacBookOrde.deleteCharAt(i);
-                }
-                names= new String(contacBookOrde);
-            };
         }
         return names;
     }
