@@ -28,7 +28,9 @@ public class ContactBook extends Contact {
         String emailCont = Leer.nextLine();
         System.out.println("Enter your movile:");
         String movilCont = Leer.nextLine();
-        c=new Contact(nameCont,emailCont,movilCont,true);
+        c.setName(nameCont);
+        c.setEmail(emailCont);
+        c.setMovil(movilCont);
         contacBook.add(c);
 
 
