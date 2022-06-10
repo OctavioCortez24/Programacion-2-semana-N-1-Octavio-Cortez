@@ -25,6 +25,14 @@ public class Controller {
                 contactBookObj.addContact(contact);
 
             } else if (decision == 2) {
+                System.out.println("Do you want to delete a contact?");
+                System.out.println("[1]--> Yes");
+                System.out.println("[2]--> No");
+                int delOrNotDel= LeerNumer.nextInt();
+                if (delOrNotDel==1) {
+                    view.deleteContact(contactBookObj);
+                }
+
                 contactBookObj.delContact(contacto);
             }else if(decision==3){
 
