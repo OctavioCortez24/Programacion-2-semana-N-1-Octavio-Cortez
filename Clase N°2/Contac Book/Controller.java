@@ -30,7 +30,8 @@ public class Controller {
                 System.out.println("[2]--> No");
                 int delOrNotDel= LeerNumer.nextInt();
                 if (delOrNotDel==1) {
-                    view.deleteContact(contactBookObj);
+                    Contact c=view.deleteContact(contactBookObj);
+                    contactBookObj.delContact(c);
                 }
 
                 contactBookObj.delContact(contacto);
