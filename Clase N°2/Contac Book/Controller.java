@@ -9,9 +9,5 @@ public class Controller {
         ArrayList<ContactBook>contactBooks = new ArrayList<>();
         view.menu(contactBooks);
 
-
-       for (int i=0;i<contactBooks.size();i++){
-           System.out.println(contactBooks.get(i));
-       }
     }
 }

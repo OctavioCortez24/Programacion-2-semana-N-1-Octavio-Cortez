@@ -71,7 +71,12 @@ public class view {
 
 
             }else if(decision==3){
-                System.out.println(contactBookObj.toString('|'));
+                ArrayList<Contact> arrayParaMostrar=contactBookObj.mostrar();
+               if (arrayParaMostrar==null||arrayParaMostrar.size()==0){
+                   System.out.println("There are no contacts");
+               }else{
+                   System.out.println(contactBookObj.toString('|'));
+               }
             }
         } while (decision != 0);
     }

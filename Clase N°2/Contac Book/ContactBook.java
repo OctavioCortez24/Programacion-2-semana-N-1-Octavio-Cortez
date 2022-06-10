@@ -42,6 +42,11 @@ public class ContactBook extends Contact {
         return false;
     }
 
+    public ArrayList<Contact> mostrar(){
+        return  contacBook;
+
+    }
+
     @Override
     public String toString() {
         return nameCB;
