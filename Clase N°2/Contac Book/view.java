@@ -16,6 +16,7 @@ public class view {
                 System.out.println("[2]-->Add contact to contactBook");
                 System.out.println("[9]-->Exit");
                 decicion = LeerNumer.nextInt();
+                //Esta linea puede generar un excepción si se ingresa un dato que no sea de tipo int.
                 if (decicion == 1) {
                     ContactBook contactBookObj = view.createAContactBook();
 
@@ -54,7 +55,7 @@ public class view {
 
         try {
             int decision = 0;
-            System.out.println("Program to create a list of contact");
+
             do {
                 System.out.println("[0]-->Exit");
                 System.out.println("[1]-->Create a new contact");
@@ -62,6 +63,7 @@ public class view {
                 System.out.println("[3]-->Show contact book");
 
                 decision = LeerNumer.nextInt();
+                //Esta linea puede generar un excepción si se ingresa un dato que no sea de tipo int.
                 if (decision == 1) {
                     Contact contact = view.createContact();
                     contactBookObj.addContact(contact);
