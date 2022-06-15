@@ -25,7 +25,7 @@ public class view {
                 }else{
                     System.out.println("Choose the contact book");
                     for (int i=0;i<memoria.size();i++){
-                        System.out.println(i+" "+memoria.get(i));
+                        System.out.println("["+i+"]--> "+memoria.get(i));
                     }
                     int seleccion=LeerNumer.nextInt();
                     ContactBook contactBookSelecion=memoria.get(seleccion);
